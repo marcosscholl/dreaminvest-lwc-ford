@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignments>
+        <name>Assign_result_q1</name>
+        <label>Assign_result_q1</label>
+        <locationX>357</locationX>
+        <locationY>43</locationY>
+        <assignmentItems>
+            <assignToReference>question_1_Response</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Formula_calc_result_pick_q1</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Questao_2</targetReference>
+        </connector>
+    </assignments>
+    <dynamicChoiceSets>
+        <name>pick_q1</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_1__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q10</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_10__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q11</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_11__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q12</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_12__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q2</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_2__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q3</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_3__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q4</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_4__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q5</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_5__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q6</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_6__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q7</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_7__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q8</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_8__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q9</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_9__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>rc_1</name>
+        <dataType>String</dataType>
+        <displayField>Question_1__c</displayField>
+        <filters>
+            <field>Question_1__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>1  Preservar meu patrimônio assumindo um risco menor</stringValue>
+            </value>
+        </filters>
+        <object>Quiz__c</object>
+        <outputAssignments>
+            <assignToReference>value_of_pick_q1</assignToReference>
+            <field>Question_1__c</field>
+        </outputAssignments>
+        <valueField>Name</valueField>
+    </dynamicChoiceSets>
+    <formulas>
+        <name>Formula_calc_result_pick_q1</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q1},&quot;1  Preservar meu patrimônio assumindo um risco menor&quot;, 1 * 3, 
+	&quot;PERGUNTA_DOIS&quot;, 2*3,
+	&quot;PERGUNTA_TRES, 3 * 3,
+	99
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>InvestorProfile {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>InvestorProfile</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Questao_1</name>
+        <label>Questao_1</label>
+        <locationX>301</locationX>
+        <locationY>166</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_result_q1</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q1</name>
+            <fieldText>&lt;p&gt;Questão 1&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q1</name>
+            <choiceReferences>pick_q1</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual a principal finalidade de investir seu patrimônio?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Questao_2</name>
+        <label>Questao_2</label>
+        <locationX>429</locationX>
+        <locationY>167</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_3</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q2</name>
+            <fieldText>&lt;p&gt;Questão 2&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q2</name>
+            <choiceReferences>pick_q2</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Por quanto tempo pretende deixar seus recursos investidos?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_10</name>
+        <label>Question_10</label>
+        <locationX>296</locationX>
+        <locationY>339</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_11</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q10</name>
+            <fieldText>&lt;p&gt;Questão 10&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q10</name>
+            <choiceReferences>pick_q10</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual é o valor do seu Patrimônio?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_11</name>
+        <label>Question_11</label>
+        <locationX>301</locationX>
+        <locationY>531</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_12</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q11</name>
+            <fieldText>&lt;p&gt;Questão 11&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q11</name>
+            <choiceReferences>pick_q11</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Como você classificaria a relação de sua formação acadêmica e da sua experiência profissional em relação aos seus conhecimentos sobre o mercado financeiro?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_12</name>
+        <label>Question_12</label>
+        <locationX>413</locationX>
+        <locationY>530</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Tela_Final</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q12</name>
+            <fieldText>&lt;p&gt;Questão 12&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q12</name>
+            <choiceReferences>pick_q12</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual das respostas abaixo mais se assemelha à sua personalidade como investidor?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_3</name>
+        <label>Question_3</label>
+        <locationX>532</locationX>
+        <locationY>171</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_4</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q3</name>
+            <fieldText>&lt;p&gt;Questão 3&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q3</name>
+            <choiceReferences>pick_q3</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Em relação aos seus investimentos na SLW, qual é a necessidade futura dos recursos aplicados?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_4</name>
+        <label>Question_4</label>
+        <locationX>647</locationX>
+        <locationY>169</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_5</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q4</name>
+            <fieldText>&lt;p&gt;Questão 4&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q4</name>
+            <choiceReferences>pick_q4</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual a sua renda mensal?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_5</name>
+        <label>Question_5</label>
+        <locationX>758</locationX>
+        <locationY>170</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_6</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q5</name>
+            <fieldText>&lt;p&gt;Questão 5&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q5</name>
+            <choiceReferences>pick_q5</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual percentual da sua renda o (a) Sr.(a) investe regularmente?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_6</name>
+        <label>Question_6</label>
+        <locationX>777</locationX>
+        <locationY>329</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_7</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q6</name>
+            <fieldText>&lt;p&gt;Questão 6&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q6</name>
+            <choiceReferences>pick_q6</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Por conta de oscilações do mercado, considere que seus investimentos percam 10% do valor aplicado. Neste caso, o que o (a) Sr.(a) faria?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_7</name>
+        <label>Question_7</label>
+        <locationX>658</locationX>
+        <locationY>333</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_8</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q7</name>
+            <fieldText>&lt;p&gt;&lt;span style=&#39;color: rgb(62, 62, 60); font-family: &quot;Salesforce Sans&quot;,Arial,sans-serif; font-size: 12.93px; background-color: rgb(255, 255, 255);&#39;&gt;Questão 7&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q7</name>
+            <choiceReferences>pick_q7</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Quais dos produtos listados abaixo você tem familiaridade? (Esta questão permite múltiplas respostas. Deve ser utilizado o maior valor entre as respostas para fins de cálculo do Perfil).</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_8</name>
+        <label>Question_8</label>
+        <locationX>537</locationX>
+        <locationY>332</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_9</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q8</name>
+            <fieldText>&lt;p&gt;Questão 8&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q8</name>
+            <choiceReferences>pick_q8</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Quais investimentos você realizou frequentemente nos últimos 24 meses?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_9</name>
+        <label>Question_9</label>
+        <locationX>428</locationX>
+        <locationY>337</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Question_10</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q9</name>
+            <fieldText>&lt;p&gt;Questão 9&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q9</name>
+            <choiceReferences>pick_q9</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual é a atual composição dos seus investimentos por categoria?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Tela_Final</name>
+        <label>Tela Final</label>
+        <locationX>554</locationX>
+        <locationY>536</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>txtFinal</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Obrigado por responder, seu perfil é XXX!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>143</locationY>
+        <connector>
+            <targetReference>Questao_1</targetReference>
+        </connector>
+    </start>
+    <status>InvalidDraft</status>
+    <variables>
+        <name>question_1_Response</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>1</scale>
+    </variables>
+    <variables>
+        <name>value_of_pick_q1</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>pick_q1</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_q1</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

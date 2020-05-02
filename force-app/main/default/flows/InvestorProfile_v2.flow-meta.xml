@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignments>
+        <name>Assign_Calc_Q10</name>
+        <label>Assign Calc Q10</label>
+        <locationX>176</locationX>
+        <locationY>560</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q10</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_11</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q11</name>
+        <label>Assign Calc Q11</label>
+        <locationX>323</locationX>
+        <locationY>878</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q11</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_12</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q12</name>
+        <label>Assign Calc Q12</label>
+        <locationX>468</locationX>
+        <locationY>858</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q12</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>testLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>assign_calc_q2</name>
+        <label>Assign Calc Q2</label>
+        <locationX>473</locationX>
+        <locationY>6</locationY>
+        <assignmentItems>
+            <assignToReference>result_q2</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>formula_calc_pick_q2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q2</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_3</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q3</name>
+        <label>Assign Calc Q3</label>
+        <locationX>588</locationX>
+        <locationY>2</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q3</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_4</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q4</name>
+        <label>Assign Calc Q4</label>
+        <locationX>700</locationX>
+        <locationY>29</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q4</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_5</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q5</name>
+        <label>Assign Calc Q5</label>
+        <locationX>866</locationX>
+        <locationY>70</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q5</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_6</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q6</name>
+        <label>Assign Calc Q6</label>
+        <locationX>717</locationX>
+        <locationY>295</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q6</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_7</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q7</name>
+        <label>Assign Calc Q7</label>
+        <locationX>595</locationX>
+        <locationY>298</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q7</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_8</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q8</name>
+        <label>Assign Calc Q8</label>
+        <locationX>491</locationX>
+        <locationY>301</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q8</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_9</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Calc_Q9</name>
+        <label>Assign Calc Q9</label>
+        <locationX>382</locationX>
+        <locationY>308</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q9</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Question_10</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Perfil_Investidor</name>
+        <label>Assign_Perfil_Investidor</label>
+        <locationX>671</locationX>
+        <locationY>820</locationY>
+        <assignmentItems>
+            <assignToReference>Resultado_Quiz_Perfil</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>formula_calculate_profile_investor</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Tela_Final</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>somando</name>
+        <label>somando</label>
+        <locationX>517</locationX>
+        <locationY>542</locationY>
+        <assignmentItems>
+            <assignToReference>Resultado_Quiz</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>var_iterate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>testLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Value_Of_Q1</name>
+        <label>Value Of Q1</label>
+        <locationX>347</locationX>
+        <locationY>13</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q1</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Questao_2</targetReference>
+        </connector>
+    </assignments>
+    <dynamicChoiceSets>
+        <name>pick_q1</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_1__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q10</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_10__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q11</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_11__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q12</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_12__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q2</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_2__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q3</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_3__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q4</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_4__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q5</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_5__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q6</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_6__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q7</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_7__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q8</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_8__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>pick_q9</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Question_9__c</picklistField>
+        <picklistObject>Quiz__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>rc_1</name>
+        <dataType>String</dataType>
+        <displayField>Question_1__c</displayField>
+        <filters>
+            <field>Question_1__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>1  Preservar meu patrimônio assumindo um risco menor</stringValue>
+            </value>
+        </filters>
+        <object>Quiz__c</object>
+        <outputAssignments>
+            <assignToReference>value_of_pick_q1</assignToReference>
+            <field>Question_1__c</field>
+        </outputAssignments>
+        <valueField>Name</valueField>
+    </dynamicChoiceSets>
+    <formulas>
+        <name>formula_calc_pick_q1</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q1},&quot; Preservar meu patrimônio assumindo um risco menor.&quot;, 1 * 3, 
+	&quot;Uma  combinação entre preservação do meu patrimônio e sua valorização.&quot;, 2*3,
+	&quot;Maximizar o potencial de ganho assumindo um risco maior.&quot;, 3 * 3,
+	0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q10</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q10},&quot;Até R$ 20.000,00.&quot;, 1 * 2, 
+	&quot;Entre R$ 20.000,01 e R$ 100.000,00.&quot;, 2 * 2,
+	&quot;Entre R$ 100.000,01 a R$ 1.000.000,00.&quot;, 3 * 2,
+	&quot;Acima de R$ 1.000.000,01.&quot;, 4 * 2,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q11</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q11},
+	&quot;Não tenho formação acadêmica na área financeira, mas desejo operar no mercado de capitais e financeiro.&quot;, 1 * 2, 
+	&quot;Apesar de não ter a formação acadêmica na área financeira possuo experiência no mercado de capitais e financeiro.&quot;, 2 * 2,
+	&quot;Tenho formação na área financeira e conheço as regras do mercado financeiro.&quot;, 3 * 2,
+	&quot;Tenho formação acadêmica e experiência profissional na área financeira, por isto conheço profundamente o mercado financeiro, como operações de derivativos e estruturadas.&quot;, 4 * 2,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q12</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q12},
+	&quot;Não admito perder nada do capital investido. Procuro um retorno seguro e sem oscilações. Segurança é mais importante do que rentabilidade.&quot;, 1 * 2, 
+	&quot;Não admito perder nada do capital investido, no entanto posso arriscar uma parte do capital para alcançar resultados melhores que a renda fixa tradicional. Valorizo mais a segurança do que a rentabilidade.&quot;, 2 * 2,
+	&quot;Posso correr riscos para conseguir uma rentabilidade acima da média, no entanto, prezo a preservação de 100% do capital investido. Divido minhas preferências entre segurança e rentabilidade, mas ainda prefiro segurança à rentabilidade.&quot;, 3 * 2,
+	&quot;Admito perdas de até 20% do capital investido, se a proposta de investimento  gerar possibilidade de altos retornos. A procura por rentabilidade é mais importante do que a segurança.&quot;, 4 * 2,
+	&quot;Minha prioridade é maximizar a rentabilidade, com a segurança em segundo pano. Posso correr grande riscos para obter elevados retornos, admitindo perder mais de 20% do meu capital investido.&quot;, 5 * 2,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q2</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q2},&quot;Até 1 ano.&quot;, 1 * 2, 
+	&quot;1 a 5 anos.&quot;, 2*2,
+	&quot;Mais de 5 anos.&quot;, 3 * 2,
+&quot;Essa reserva não será utilizada, a não ser em caso de emergência.&quot;, 4 * 2,
+	0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q3</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q3},&quot;Preciso desse dinheiro como complemento de renda.&quot;, 1 * 2, 
+	&quot;Eventualmente posso precisar utilizar uma  parte dele.&quot;, 2*2,
+	&quot;Não tenho necessidade imediata desse dinheiro.&quot;, 3 * 2,
+	0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q4</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q4},&quot;Até R$ 3.000,00.&quot;, 1, 
+	&quot;Entre R$ 3.000,00 e R$ 5.000,00.&quot;, 2,
+	&quot;Entre R$ 5.000,00 e R$ 10.000,00.&quot;, 3,
+        &quot;Entre R$ 10.000,00 e R$ 30.000,00.&quot;, 4,
+&quot;Mais de R$ 30.000,00.&quot;, 5,
+	0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q5</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q5},&quot;Até 10%.&quot;, 1 * 2, 
+	&quot;De 10 a 20%.&quot;, 2 * 2,
+	&quot;De 20% a 50%.&quot;, 3 * 2,
+	&quot;Acima de 50%.&quot;, 4 * 2,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q6</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q6},&quot;Não sei o que faria.&quot;, 1 * 3, 
+	&quot;Venderia toda a posição.&quot;, 2 * 3,
+	&quot;Manteria a posição.&quot;, 3 * 3,
+	&quot;Aumentaria a posição.&quot;, 4 * 3,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q7</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q7},&quot;Poupança, Fundos DI, CDB, Fundos de Renda Fixa.&quot;, 1 * 2, 
+	&quot;Fundos Multimercados, Títulos Públicos, LCI, LCA.&quot;, 2 * 2,
+	&quot;Fundos de Ações, Ações, Fundos Imobiliários, Debêntures, Fundos Cambiais.&quot;, 3 * 3,
+	&quot;Fundos de Investimentos em Participações (FIP), Derivativos (Futuros, Opções e Swaps).&quot;, 4 * 3,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q8</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q8},&quot;Nunca investi. Primeiro aporte.&quot;, 1 * 3, 
+	&quot;Investi apenas em produtos ou fundos de renda fixa.&quot;, 2 * 3,
+	&quot;Investi em produtos ou fundos de renda fixa e/ ou de multimercado e/ou de renda variável e/ou com derivativos com finalidade de hedge.&quot;, 3 * 3,
+	&quot;Investi em produtos de renda fixa e/ou de multimercado e/ou de renda variável e/ou com derivativos com finalidade de especulação ou alavancagem.&quot;, 4 * 3,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calc_pick_q9</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!pick_q9},
+	&quot;Renda Variável (Ações e Fundos de Ações).&quot;, 5 * 2, 
+	&quot;Fundos de Investimento Multimercado.&quot;, 4 * 2,
+	&quot;Renda Fixa (Fundos de Renda Fixa, DI, CDBs, Poupança).&quot;, 3 * 2,
+	&quot;Imóveis.&quot;, 2 * 2,
+	&quot;Outros.&quot;, 1 * 2,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>formula_calculate_profile_investor</name>
+        <dataType>String</dataType>
+        <expression>IF({!Resultado_Quiz} &lt;= 52, &quot;Conservador&quot;,
+   IF( AND({!Resultado_Quiz} &gt; 52,{!Resultado_Quiz} &lt;= 65), &quot;Moderado&quot;,
+      IF( AND({!Resultado_Quiz}  &gt; 65,{!Resultado_Quiz} &lt;= 71), &quot;Dinâmico&quot;,
+         IF( AND({!Resultado_Quiz} &gt; 71,{!Resultado_Quiz} &lt;= 83), &quot;Arrojado&quot;,
+            IF( AND({!Resultado_Quiz} &gt; 83,{!Resultado_Quiz} &lt;= 104), &quot;Agressivo&quot;,
+            &quot;Não Calculado&quot;
+            )
+         )
+      )
+   )
+)</expression>
+    </formulas>
+    <interviewLabel>InvestorProfile_v2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>InvestorProfile_v2</label>
+    <loops>
+        <name>testLoop</name>
+        <label>testLoop</label>
+        <locationX>559</locationX>
+        <locationY>693</locationY>
+        <assignNextValueToReference>var_iterate</assignNextValueToReference>
+        <collectionReference>sum_values</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>somando</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Assign_Perfil_Investidor</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Questao_1</name>
+        <label>Questao_1</label>
+        <locationX>307</locationX>
+        <locationY>171</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Value_Of_Q1</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q1</name>
+            <fieldText>&lt;p&gt;Questão 1&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q1</name>
+            <choiceReferences>pick_q1</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual a principal finalidade de investir seu patrimônio?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Questao_2</name>
+        <label>Questao_2</label>
+        <locationX>434</locationX>
+        <locationY>164</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>assign_calc_q2</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q2</name>
+            <fieldText>&lt;p&gt;Questão 2&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q2</name>
+            <choiceReferences>pick_q2</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Por quanto tempo pretende deixar seus recursos investidos?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_10</name>
+        <label>Question_10</label>
+        <locationX>302</locationX>
+        <locationY>423</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q10</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q10</name>
+            <fieldText>&lt;p&gt;Questão 10&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q10</name>
+            <choiceReferences>pick_q10</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual é o valor do seu Patrimônio?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_11</name>
+        <label>Question_11</label>
+        <locationX>297</locationX>
+        <locationY>656</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q11</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q11</name>
+            <fieldText>&lt;p&gt;Questão 11&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q11</name>
+            <choiceReferences>pick_q11</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Como você classificaria a relação de sua formação acadêmica e da sua experiência profissional em relação aos seus conhecimentos sobre o mercado financeiro?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_12</name>
+        <label>Question_12</label>
+        <locationX>426</locationX>
+        <locationY>693</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q12</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q12</name>
+            <fieldText>&lt;p&gt;Questão 12&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q12</name>
+            <choiceReferences>pick_q12</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual das respostas abaixo mais se assemelha à sua personalidade como investidor?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_3</name>
+        <label>Question_3</label>
+        <locationX>532</locationX>
+        <locationY>171</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q3</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q3</name>
+            <fieldText>&lt;p&gt;Questão 3&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q3</name>
+            <choiceReferences>pick_q3</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Em relação aos seus investimentos na SLW, qual é a necessidade futura dos recursos aplicados?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_4</name>
+        <label>Question_4</label>
+        <locationX>647</locationX>
+        <locationY>169</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q4</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q4</name>
+            <fieldText>&lt;p&gt;Questão 4&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q4</name>
+            <choiceReferences>pick_q4</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual a sua renda mensal?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_5</name>
+        <label>Question_5</label>
+        <locationX>758</locationX>
+        <locationY>170</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q5</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q5</name>
+            <fieldText>&lt;p&gt;Questão 5&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q5</name>
+            <choiceReferences>pick_q5</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual percentual da sua renda o (a) Sr.(a) investe regularmente?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_6</name>
+        <label>Question_6</label>
+        <locationX>776</locationX>
+        <locationY>413</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q6</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q6</name>
+            <fieldText>&lt;p&gt;Questão 6&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q6</name>
+            <choiceReferences>pick_q6</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Por conta de oscilações do mercado, considere que seus investimentos percam 10% do valor aplicado. Neste caso, o que o (a) Sr.(a) faria?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_7</name>
+        <label>Question_7</label>
+        <locationX>658</locationX>
+        <locationY>414</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q7</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q7</name>
+            <fieldText>&lt;p&gt;&lt;span style=&#39;color: rgb(62, 62, 60); font-family: &quot;Salesforce Sans&quot;,Arial,sans-serif; font-size: 12.93px; background-color: rgb(255, 255, 255);&#39;&gt;Questão 7&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q7</name>
+            <choiceReferences>pick_q7</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Quais dos produtos listados abaixo você tem familiaridade? (Esta questão permite múltiplas respostas. Deve ser utilizado o maior valor entre as respostas para fins de cálculo do Perfil).</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_8</name>
+        <label>Question_8</label>
+        <locationX>540</locationX>
+        <locationY>410</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q8</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q8</name>
+            <fieldText>&lt;p&gt;Questão 8&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q8</name>
+            <choiceReferences>pick_q8</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Quais investimentos você realizou frequentemente nos últimos 24 meses?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Question_9</name>
+        <label>Question_9</label>
+        <locationX>422</locationX>
+        <locationY>430</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assign_Calc_Q9</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Q9</name>
+            <fieldText>&lt;p&gt;Questão 9&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>rd_q9</name>
+            <choiceReferences>pick_q9</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Qual é a atual composição dos seus investimentos por categoria?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Tela_Final</name>
+        <label>Tela Final</label>
+        <locationX>852</locationX>
+        <locationY>668</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>txtFinal</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Obrigado por responder, seu perfil é {!Resultado_Quiz}, {!Resultado_Quiz_Perfil}!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>143</locationY>
+        <connector>
+            <targetReference>Questao_1</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>result_q2</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>Resultado_Quiz</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>Resultado_Quiz_Perfil</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>sum_values</name>
+        <dataType>Number</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <name>value_of_pick_q1</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>pick_q1</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>var_colection_result</name>
+        <dataType>Number</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <name>var_iterate</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <name>var_q1</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_result_q1</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>1</scale>
+    </variables>
+</Flow>
