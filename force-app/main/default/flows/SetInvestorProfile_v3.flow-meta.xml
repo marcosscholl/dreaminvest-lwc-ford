@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <assignments>
+        <name>Assign_Calc_Q1</name>
+        <label>Assign Calc Q1</label>
+        <locationX>360</locationX>
+        <locationY>22</locationY>
+        <assignmentItems>
+            <assignToReference>sum_values</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>formula_calc_pick_q1</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Questao_2</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Assign_Calc_Q10</name>
         <label>Assign Calc Q10</label>
         <locationX>176</locationX>
@@ -19,8 +35,8 @@
     <assignments>
         <name>Assign_Calc_Q11</name>
         <label>Assign Calc Q11</label>
-        <locationX>323</locationX>
-        <locationY>878</locationY>
+        <locationX>327</locationX>
+        <locationY>841</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -35,8 +51,8 @@
     <assignments>
         <name>Assign_Calc_Q12</name>
         <label>Assign Calc Q12</label>
-        <locationX>468</locationX>
-        <locationY>858</locationY>
+        <locationX>470</locationX>
+        <locationY>840</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -45,21 +61,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>testLoop</targetReference>
+            <targetReference>LoopIterate</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>assign_calc_q2</name>
         <label>Assign Calc Q2</label>
-        <locationX>473</locationX>
-        <locationY>6</locationY>
-        <assignmentItems>
-            <assignToReference>result_q2</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>formula_calc_pick_q2</elementReference>
-            </value>
-        </assignmentItems>
+        <locationX>483</locationX>
+        <locationY>19</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -74,8 +83,8 @@
     <assignments>
         <name>Assign_Calc_Q3</name>
         <label>Assign Calc Q3</label>
-        <locationX>588</locationX>
-        <locationY>2</locationY>
+        <locationX>594</locationX>
+        <locationY>19</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -90,8 +99,8 @@
     <assignments>
         <name>Assign_Calc_Q4</name>
         <label>Assign Calc Q4</label>
-        <locationX>700</locationX>
-        <locationY>29</locationY>
+        <locationX>703</locationX>
+        <locationY>23</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -106,8 +115,8 @@
     <assignments>
         <name>Assign_Calc_Q5</name>
         <label>Assign Calc Q5</label>
-        <locationX>866</locationX>
-        <locationY>70</locationY>
+        <locationX>883</locationX>
+        <locationY>238</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -122,8 +131,8 @@
     <assignments>
         <name>Assign_Calc_Q6</name>
         <label>Assign Calc Q6</label>
-        <locationX>717</locationX>
-        <locationY>295</locationY>
+        <locationX>720</locationX>
+        <locationY>314</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -138,8 +147,8 @@
     <assignments>
         <name>Assign_Calc_Q7</name>
         <label>Assign Calc Q7</label>
-        <locationX>595</locationX>
-        <locationY>298</locationY>
+        <locationX>600</locationX>
+        <locationY>314</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -154,8 +163,8 @@
     <assignments>
         <name>Assign_Calc_Q8</name>
         <label>Assign Calc Q8</label>
-        <locationX>491</locationX>
-        <locationY>301</locationY>
+        <locationX>488</locationX>
+        <locationY>315</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -170,8 +179,8 @@
     <assignments>
         <name>Assign_Calc_Q9</name>
         <label>Assign Calc Q9</label>
-        <locationX>382</locationX>
-        <locationY>308</locationY>
+        <locationX>365</locationX>
+        <locationY>307</locationY>
         <assignmentItems>
             <assignToReference>sum_values</assignToReference>
             <operator>Add</operator>
@@ -196,14 +205,37 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Tela_Final</targetReference>
+            <targetReference>Set_Account_New_Profile</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Account_New_Profile</name>
+        <label>Set Account New Profile</label>
+        <locationX>983</locationX>
+        <locationY>802</locationY>
+        <assignmentItems>
+            <assignToReference>account.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>account.Investor_Profile__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Resultado_Quiz_Perfil</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Account</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>somando</name>
         <label>somando</label>
-        <locationX>517</locationX>
-        <locationY>542</locationY>
+        <locationX>678</locationX>
+        <locationY>592</locationY>
         <assignmentItems>
             <assignToReference>Resultado_Quiz</assignToReference>
             <operator>Add</operator>
@@ -212,23 +244,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>testLoop</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Value_Of_Q1</name>
-        <label>Value Of Q1</label>
-        <locationX>347</locationX>
-        <locationY>13</locationY>
-        <assignmentItems>
-            <assignToReference>sum_values</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>formula_calc_pick_q1</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Questao_2</targetReference>
+            <targetReference>LoopIterate</targetReference>
         </connector>
     </assignments>
     <dynamicChoiceSets>
@@ -326,24 +342,6 @@
         <object xsi:nil="true"/>
         <picklistField>Question_9__c</picklistField>
         <picklistObject>Quiz__c</picklistObject>
-    </dynamicChoiceSets>
-    <dynamicChoiceSets>
-        <name>rc_1</name>
-        <dataType>String</dataType>
-        <displayField>Question_1__c</displayField>
-        <filters>
-            <field>Question_1__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>1  Preservar meu patrimônio assumindo um risco menor</stringValue>
-            </value>
-        </filters>
-        <object>Quiz__c</object>
-        <outputAssignments>
-            <assignToReference>value_of_pick_q1</assignToReference>
-            <field>Question_1__c</field>
-        </outputAssignments>
-        <valueField>Name</valueField>
     </dynamicChoiceSets>
     <formulas>
         <name>formula_calc_pick_q1</name>
@@ -476,7 +474,7 @@
    IF( AND({!Resultado_Quiz} &gt; 52,{!Resultado_Quiz} &lt;= 65), &quot;Moderado&quot;,
       IF( AND({!Resultado_Quiz}  &gt; 65,{!Resultado_Quiz} &lt;= 71), &quot;Dinâmico&quot;,
          IF( AND({!Resultado_Quiz} &gt; 71,{!Resultado_Quiz} &lt;= 83), &quot;Arrojado&quot;,
-            IF( AND({!Resultado_Quiz} &gt; 83,{!Resultado_Quiz} &lt;= 104), &quot;Agressivo&quot;,
+            IF( AND({!Resultado_Quiz} &gt; 83,{!Resultado_Quiz} &lt;= 110), &quot;Agressivo&quot;,
             &quot;Não Calculado&quot;
             )
          )
@@ -484,11 +482,11 @@
    )
 )</expression>
     </formulas>
-    <interviewLabel>InvestorProfile_v2 {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>InvestorProfile_v2</label>
+    <interviewLabel>InvestorProfile_v3 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SetInvestorProfile_v3</label>
     <loops>
-        <name>testLoop</name>
-        <label>testLoop</label>
+        <name>LoopIterate</name>
+        <label>LoopIterate</label>
         <locationX>559</locationX>
         <locationY>693</locationY>
         <assignNextValueToReference>var_iterate</assignNextValueToReference>
@@ -514,6 +512,16 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
+    <recordUpdates>
+        <name>Update_Account</name>
+        <label>Update Account</label>
+        <locationX>805</locationX>
+        <locationY>732</locationY>
+        <connector>
+            <targetReference>Tela_Final</targetReference>
+        </connector>
+        <inputReference>account</inputReference>
+    </recordUpdates>
     <screens>
         <name>Questao_1</name>
         <label>Questao_1</label>
@@ -523,7 +531,7 @@
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <connector>
-            <targetReference>Value_Of_Q1</targetReference>
+            <targetReference>Assign_Calc_Q1</targetReference>
         </connector>
         <fields>
             <name>Display_Q1</name>
@@ -544,8 +552,8 @@
     <screens>
         <name>Questao_2</name>
         <label>Questao_2</label>
-        <locationX>434</locationX>
-        <locationY>164</locationY>
+        <locationX>419</locationX>
+        <locationY>171</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -571,8 +579,8 @@
     <screens>
         <name>Question_10</name>
         <label>Question_10</label>
-        <locationX>302</locationX>
-        <locationY>423</locationY>
+        <locationX>301</locationX>
+        <locationY>463</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -590,7 +598,7 @@
             <dataType>String</dataType>
             <fieldText>Qual é o valor do seu Patrimônio?</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -626,7 +634,7 @@
         <name>Question_12</name>
         <label>Question_12</label>
         <locationX>426</locationX>
-        <locationY>693</locationY>
+        <locationY>663</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -669,9 +677,9 @@
             <name>rd_q3</name>
             <choiceReferences>pick_q3</choiceReferences>
             <dataType>String</dataType>
-            <fieldText>Em relação aos seus investimentos na SLW, qual é a necessidade futura dos recursos aplicados?</fieldText>
+            <fieldText>Em relação aos seus investimentos, qual é a necessidade futura dos recursos aplicados?</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -698,7 +706,7 @@
             <dataType>String</dataType>
             <fieldText>Qual a sua renda mensal?</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -706,8 +714,8 @@
     <screens>
         <name>Question_5</name>
         <label>Question_5</label>
-        <locationX>758</locationX>
-        <locationY>170</locationY>
+        <locationX>759</locationX>
+        <locationY>169</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -725,7 +733,7 @@
             <dataType>String</dataType>
             <fieldText>Qual percentual da sua renda o (a) Sr.(a) investe regularmente?</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -734,7 +742,7 @@
         <name>Question_6</name>
         <label>Question_6</label>
         <locationX>776</locationX>
-        <locationY>413</locationY>
+        <locationY>456</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -752,7 +760,7 @@
             <dataType>String</dataType>
             <fieldText>Por conta de oscilações do mercado, considere que seus investimentos percam 10% do valor aplicado. Neste caso, o que o (a) Sr.(a) faria?</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -760,8 +768,8 @@
     <screens>
         <name>Question_7</name>
         <label>Question_7</label>
-        <locationX>658</locationX>
-        <locationY>414</locationY>
+        <locationX>657</locationX>
+        <locationY>458</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -779,7 +787,7 @@
             <dataType>String</dataType>
             <fieldText>Quais dos produtos listados abaixo você tem familiaridade? (Esta questão permite múltiplas respostas. Deve ser utilizado o maior valor entre as respostas para fins de cálculo do Perfil).</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -787,8 +795,8 @@
     <screens>
         <name>Question_8</name>
         <label>Question_8</label>
-        <locationX>540</locationX>
-        <locationY>410</locationY>
+        <locationX>539</locationX>
+        <locationY>447</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -806,7 +814,7 @@
             <dataType>String</dataType>
             <fieldText>Quais investimentos você realizou frequentemente nos últimos 24 meses?</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -814,8 +822,8 @@
     <screens>
         <name>Question_9</name>
         <label>Question_9</label>
-        <locationX>422</locationX>
-        <locationY>430</locationY>
+        <locationX>426</locationX>
+        <locationY>460</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -833,7 +841,7 @@
             <dataType>String</dataType>
             <fieldText>Qual é a atual composição dos seus investimentos por categoria?</fieldText>
             <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
+            <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -841,14 +849,14 @@
     <screens>
         <name>Tela_Final</name>
         <label>Tela Final</label>
-        <locationX>852</locationX>
-        <locationY>668</locationY>
+        <locationX>883</locationX>
+        <locationY>618</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <fields>
             <name>txtFinal</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Obrigado por responder, seu perfil é {!Resultado_Quiz}, {!Resultado_Quiz_Perfil}!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Obrigado por responder, seu perfil é &lt;/span&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Resultado_Quiz_Perfil}&lt;/b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;!&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -863,15 +871,19 @@
     </start>
     <status>Active</status>
     <variables>
-        <name>result_q2</name>
-        <dataType>Number</dataType>
+        <name>account</name>
+        <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <scale>0</scale>
-        <value>
-            <numberValue>0.0</numberValue>
-        </value>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
     </variables>
     <variables>
         <name>Resultado_Quiz</name>
@@ -900,16 +912,6 @@
         <scale>2</scale>
     </variables>
     <variables>
-        <name>value_of_pick_q1</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <elementReference>pick_q1</elementReference>
-        </value>
-    </variables>
-    <variables>
         <name>var_colection_result</name>
         <dataType>Number</dataType>
         <isCollection>true</isCollection>
@@ -924,20 +926,5 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <scale>2</scale>
-    </variables>
-    <variables>
-        <name>var_q1</name>
-        <dataType>Picklist</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>var_result_q1</name>
-        <dataType>Number</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <scale>1</scale>
     </variables>
 </Flow>
